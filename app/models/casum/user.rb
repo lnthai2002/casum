@@ -1,5 +1,7 @@
 module Casum
   class User < ActiveRecord::Base
+    self.table_name = 'users'
+
     attr_accessor :password
     #attr_accessible :email, :password, :group_ids
     has_many :memberships
