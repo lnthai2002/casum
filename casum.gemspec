@@ -7,16 +7,22 @@ require "casum/version"
 Gem::Specification.new do |s|
   s.name        = "casum"
   s.version     = Casum::VERSION
-  s.authors     = ["TODO: Your name"]
-  s.email       = ["TODO: Your email"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of Casum."
-  s.description = "TODO: Description of Casum."
+  s.authors     = ["Nhut Thai Le"]
+  s.email       = ["lnthai2002@yahoo.com"]
+  s.homepage    = "darkportal.no-ip.info/pas/casum"
+  s.summary     = "Manage users for CAS on Darkportal"
+  s.description = "Manage users for CAS on Darkportal"
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
   s.test_files = Dir["test/**/*"]
 
   s.add_dependency "rails", "~> 4.0.2"
-
-  s.add_development_dependency "sqlite3"
+  s.add_dependency 'haml-rails'
+  s.add_dependency 'cancan'
+  s.add_dependency 'dynamic_form'
+  s.add_dependency 'rubycas-client'
+  s.add_dependency "mysql2"
+  s.add_development_dependency 'rspec-rails'
+  #s.add_development_dependency 'capybara'                    #not used yet
+  s.add_development_dependency 'factory_girl_rails'
 end
