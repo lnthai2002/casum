@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.version     = Casum::VERSION
   s.authors     = ["Nhut Thai Le"]
   s.email       = ["lnthai2002@yahoo.com"]
-  s.homepage    = "darkportal.no-ip.info/pas/casum"
+  s.homepage    = "http://darkportal.no-ip.info/pas/casum"
   s.summary     = "Manage users for CAS on Darkportal"
   s.description = "Manage users for CAS on Darkportal"
 
@@ -17,12 +17,17 @@ Gem::Specification.new do |s|
   s.test_files = Dir["test/**/*"]
 
   s.add_dependency "rails", "~> 4.0.1"
-  s.add_dependency 'haml-rails'
-  s.add_dependency 'cancan'
-  s.add_dependency 'dynamic_form'
+  s.add_dependency 'mysql2'
   s.add_dependency 'rubycas-client'
-  s.add_dependency "mysql2"
+  s.add_dependency 'haml-rails'
+  s.add_dependency 'jquery-rails'
+  s.add_dependency 'jquery-ui-rails'
+  s.add_dependency 'sass-rails'
+  s.add_dependency 'foundation-rails'             #foundation UI framework
+  s.add_dependency 'remotipart'                   #allow submit ajax form with multipart
+  s.add_dependency 'dynamic_form'
+  s.add_dependency 'cancan'
   s.add_development_dependency 'rspec-rails'
-  #s.add_development_dependency 'capybara'                    #not used yet
+  #s.add_development_dependency 'capybara'        #not used yet
   s.add_development_dependency 'factory_girl_rails'
 end
