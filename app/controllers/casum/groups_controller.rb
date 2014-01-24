@@ -5,6 +5,7 @@ module Casum
     before_filter CASClient::Frameworks::Rails::Filter
     before_filter :authorize_user
     before_filter :fetch_group, :only=>[:show, :edit, :update, :destroy]
+    layout 'casum/layouts/groups'
     def index
       @groups = Group.all
     end

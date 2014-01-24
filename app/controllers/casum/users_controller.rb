@@ -5,6 +5,7 @@ module Casum
     before_filter CASClient::Frameworks::Rails::Filter
     before_filter :authorize_user
     before_filter :fetch_user, :only=>[:show, :edit, :update, :destroy]
+    layout 'casum/layouts/users'
     def index
       @users = User.all
     end
