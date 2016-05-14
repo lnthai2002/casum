@@ -17,13 +17,13 @@ Gem::Specification.new do |s|
   s.test_files = Dir["test/**/*"]
 
   s.add_dependency "rails", "~> 4.0.1"
-  s.add_dependency 'mysql2'
+  s.add_dependency 'mysql2', '~> 0.3.18'
   s.add_dependency 'rubycas-client'
   s.add_dependency 'haml-rails'
   s.add_dependency 'jquery-rails'
   s.add_dependency 'jquery-ui-rails'
   s.add_dependency 'sass-rails'
-  s.add_dependency 'foundation-rails'             #foundation UI framework
+  s.add_dependency 'foundation-rails', '~> 5.0'   #foundation UI framework
   s.add_dependency 'remotipart'                   #allow submit ajax form with multipart
   s.add_dependency 'dynamic_form'
   s.add_dependency 'cancan'
